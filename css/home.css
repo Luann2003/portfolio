@@ -10,6 +10,9 @@
   
 }
 
+.content, .sociais,.container-projetos, .cards-projetos, .container-text, .container-image{
+    visibility: hidden;
+}
 
 body{
     background-color: #1C1C1C;
@@ -26,7 +29,7 @@ header{
     align-items: center;
     justify-content: space-around;
     padding: 20px;
-    background-color: #1C1C1C;
+    background-color: black;
 }
 
 .title{
@@ -158,9 +161,7 @@ span{
 }
 
 #projetos{
-   background-color: #1C1C1C;
    width: 80%;
-   
 }
 
 .container-projetos{
@@ -168,10 +169,8 @@ span{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 100px;
 }
-
-
 
 .cards-container{
     margin-top: 20px;
@@ -243,6 +242,65 @@ span{
     padding: 5px;
     color: #18F9EB;
 }
+
+#about{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1C1C;
+}
+
+#about h2 {
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 0px 0px 1px black;
+}
+
+.container-about{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+}
+
+.container-text{
+    height: 300px;
+    width: 711px;
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+}
+
+.container-text h3{
+    text-align: left;
+    padding: 0px 10px 10px 0px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container-text p{
+    font-size: 16px;
+    color: #dedede;
+}
+
+.container-image{
+    height: 300px;
+    width: 711px;
+}
+
+.container-image img{
+    width: 220px; 
+    height: 250px; 
+    border-radius: 50%; 
+    border: 3px solid black; 
+
+}
+
+
 
 
 

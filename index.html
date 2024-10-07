@@ -6,6 +6,7 @@
     <title>Luan Luciano</title>
     <link rel="stylesheet" href="/css/home.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
 <body>
@@ -13,14 +14,14 @@
         <h1>Luan <a href="" class="title">Luciano</a></h1>
         <nav>
             <a href="#home">Início</a>
-            <a href="">Sobre</a>
-            <a href="">Projetos</a>
+            <a href="#about">Sobre</a>
+            <a href="#projetos">Projetos</a>
             <a href="">Contato</a>
         </nav>
     </header>
     <main>
         <div class="home-container">
-            <section id="#home">
+            <section id="home">
                 <div class="overlay"></div>
                     <div class="content">
                        <p>Olá, visitante! 👋</p>
@@ -36,6 +37,23 @@
                     </div>
             </section>
         </div>
+
+        <section id="about">
+            <h2>Sobre</h2>
+            <div class="line-blue"></div>
+            <div class="container-about">
+                <div class="container-text">
+                    <h3> <span>Quem sou eu?</span> ⚡</h3>
+                    <p>Sou um desenvolvedor backend com sólido conhecimento em Java e Spring Boot. Tenho experiência em criar APIs robustas e seguras, utilizando recursos avançados do Spring, e também em Docker para ambientes escaláveis. Atualmente, estou estudando Angular para expandir minhas habilidades para o front-end, visando me tornar um desenvolvedor full-stack.</p>
+                </div>
+
+                <div class="container-image">
+                    <img src="/images/foto.jpg" alt="profile">
+                </div>
+                
+            </div>
+        </section>
+
         <section id="projetos">
             <div class="container-projetos">
                 <h2>Projetos</h2>
@@ -91,6 +109,8 @@
 
         </section>
     </main>
+
+    <script src="/js/animation.js"></script>
 </body>
 
 </html>
