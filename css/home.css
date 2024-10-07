@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+  
+}
+
+
+body{
+    background-color: #1C1C1C;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #1C1C1C;
+}
+
+.title{
+    color: #18F9EB;
+    text-shadow: 0px 0px 7px #18F9EB;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+nav a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+
+}
+
+nav a:hover{
+    color: #18F9EB;
+}
+
+nav a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px; 
+    background-color: #18F9EB;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%; 
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: scroll;
+    position: relative;
+}
+
+.overlay {
+    position: absolute; /* Torna a posição do overlay absoluta */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.601);
+    z-index: 1; /* Garante que o overlay fique acima da imagem de fundo */
+}
+
+.content {
+    position: relative; 
+    z-index: 2; /* Garante que o texto fique acima do overlay */
+    text-align: center; 
+    color: white;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+.content h3{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+span{
+    color: #18F9EB;
+}
+
+.sociais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bxl-linkedin, .bxl-github, .bx-envelope{
+    position: relative;
+    z-index: 2;
+    padding: 20px 0px;
+    font-size: 30px;
+    color: rgb(181, 181, 181);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bxl-linkedin:hover, .bxl-github:hover, .bx-envelope:hover{
+    color: rgb(206, 206, 206);
+    font-size: 35px;
+}
+
+.line{
+    width: 70px;
+    height: 2px; 
+    background-color: rgb(181, 181, 181);
+}
+
+.about{
+    width: 80%;
+    height: 300px;
+    background-color: #7a7a7a;
+    margin-top: 100px;
+}
+
+#projetos{
+   background-color: #1C1C1C;
+   width: 80%;
+   
+}
+
+.container-projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+
+
+.cards-container{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.container-projetos h2{
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 0px 0px 1px black;
+}
+
+.line-blue{
+    width: 160px;
+    height: 2px; 
+    background-color: #18F9EB;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.cards-projetos {
+    position: relative;
+    width: 352px;
+    height: 250px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.cards-projetos:hover {
+    transform: scale(1.15); 
+    transition: 0.4s;
+}
+
+.overlay-projetos{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.234);
+    z-index: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cards-projetos img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    border-bottom: 3px solid #1C1C1C;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.482);
+}
+
+.cards-projetos:hover .overlay-projetos {
+    opacity: 0; 
+    transition: 0.4s;
+}
+
+.tech i{
+    font-size: 22px;
+    padding: 5px;
+    color: #18F9EB;
+}
+
+
+
+
+
+
+
+
+
+
