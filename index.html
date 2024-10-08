@@ -16,11 +16,11 @@
             <a href="#home">Início</a>
             <a href="#about">Sobre</a>
             <a href="#projetos">Projetos</a>
-            <a href="">Contato</a>
         </nav>
     </header>
+  
     <main>
-        <div class="home-container">
+        <div class="home-container" id="home">
             <section id="home">
                 <div class="overlay"></div>
                     <div class="content">
@@ -30,9 +30,10 @@
                     </div>
                     <div class="sociais">
                         <div class="line"></div>
-                        <i class='bx bxl-linkedin'></i>
-                        <i class='bx bxl-github' ></i>
-                        <i class='bx bx-envelope' ></i>
+                        <a href="https://www.linkedin.com/in/luan-luciano-1603b4197/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/Luann2003" target="_blank"><i class='bx bxl-github' ></i></a>
+                        <a href="https://wa.me/5547996728377" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+                        
                         <div class="line"></div>
                     </div>
             </section>
@@ -44,14 +45,30 @@
             <div class="container-about">
                 <div class="container-text">
                     <h3> <span>Quem sou eu?</span> ⚡</h3>
-                    <p>Sou um desenvolvedor backend com sólido conhecimento em Java e Spring Boot. Tenho experiência em criar APIs robustas e seguras, utilizando recursos avançados do Spring, e também em Docker para ambientes escaláveis. Atualmente, estou estudando Angular para expandir minhas habilidades para o front-end, visando me tornar um desenvolvedor full-stack.</p>
+                    <p>Sou um desenvolvedor backend com sólido conhecimento em <strong>Java</strong> e <strong>Spring Boot</strong>. Tenho experiência em criar APIs robustas e seguras, utilizando recursos avançados do Spring, e também em <strong>Docker</strong> para ambientes escaláveis. Atualmente, estou estudando <strong>Angular</strong> para expandir minhas habilidades para o front-end, visando me tornar um desenvolvedor full-stack.</p>
+                    <div class="cv">
+                        <a href="pdf/Luan Curriculo Backend.pdf" download="Luan_Luciano_CV.pdf" class="download-btn">Download CV</a>
+                    </div>
                 </div>
-
                 <div class="container-image">
                     <img src="images/foto.jpg" alt="profile">
-                </div>
-                
+                </div>         
             </div>
+
+            <div class="skills">
+                <div class="skills-icons">
+                    <i class='bx bxl-java'></i>
+                    <i class='bx bxl-spring-boot' ></i>
+                    <i class='bx bxl-postgresql' ></i>
+                    <i class='bx bxl-docker' ></i>
+                    <i class='bx bxl-javascript' ></i>
+                    <i class='bx bxl-typescript' ></i>
+                    <i class='bx bxl-angular' ></i>
+                </div>
+
+            </div>
+
+
         </section>
 
         <section id="projetos">
@@ -104,11 +121,16 @@
                 </div>
             </div>
         </section>
-
-        <section class="about">
-
-        </section>
     </main>
+
+    <footer>
+        <div class="">
+            <p>Desenvolvido por &copy; <strong> <span>Luan Luciano</span> 2024.</strong> Todos os direitos reservados.</p>
+
+        </div>
+
+
+    </footer>
 
     <script src="js/animation.js"></script>
 </body>
