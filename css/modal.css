@@ -1,0 +1,142 @@
+.modal{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #00000090;
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    width: 53vw;
+    margin: 15vh auto;
+    background-color:  #1C1C1C;
+    box-shadow: 1px 1px 10px black;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.modalX{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25px;
+}
+
+.modal-content h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #18F9EB;
+    text-align: left;
+}
+
+.modal-content p{
+    text-align: justify;
+    font-size: 14px;
+    color: #dedede;
+}
+
+.modal-info{
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+    padding: 10px 30px;
+}
+
+#modal-date{
+    color: #18F9EB;
+    margin-top: 5px;
+}
+
+
+#modal-image{
+    width: 550px;
+    height: 350px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 15px;
+}
+
+button{
+    background-color: #dedede; 
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-bottom: 5px;
+    border: none;
+}
+
+button a {
+    color: black;
+}
+
+button:hover{
+    background-color: #18F9EB;
+    transition: 0.4s;
+    color: black;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    top: 2px;    
+    right: 5px; 
+    color: white;
+    transition: 0.4s;
+}
+
+.modal-close:hover{
+    color: #18F9EB;
+    transition: 0.4s;
+}
+
+
+@media (max-width:480px){
+    .modal{
+        top:100%;
+        transition: all 1s ease;
+    }
+    .modal.active{
+        top:0;
+    }
+    .modal-content{
+        margin:0;
+        width:100%;
+        position:fixed;
+    }
+
+}

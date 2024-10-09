@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luan Luciano</title>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -65,10 +66,7 @@
                     <i class='bx bxl-typescript' ></i>
                     <i class='bx bxl-angular' ></i>
                 </div>
-
             </div>
-
-
         </section>
 
         <section id="projetos">
@@ -78,61 +76,86 @@
             </div>
 
             <div class="cards-container">
-                <div class="cards-projetos">
+                <div class="cards-projetos" data-title="MovieFlix" data-info="Desenvolvi o front-end do MovieFlix com Angular 17, criando uma interface responsiva para explorar filmes e deixar avaliações. Implementei componentes reutilizáveis e formulários reativos. O back-end foi desenvolvido em Spring Boot, com uma API RESTful segura utilizando autenticação OAuth 2.0. Esse projeto me permitiu aplicar habilidades de desenvolvimento full-stack e aprofundar meu conhecimento em tecnologias modernas." data-image="images/movieflix.png" data-date="25/09/2024" data-linkedin="https://www.linkedin.com/posts/luan-luciano-1603b4197_angular-springboot-fullstackdevelopment-activity-7245064047237230592-ne8a?utm_source=share&utm_medium=member_desktop" data-github="https://github.com/Luann2003/MovieFlix"  >
                     <div class="overlay-projetos">
                         <p>MovieFlix</p>
                         <div class="tech">
                             <i class='bx bxl-spring-boot'></i>
-                            <i class='bx bxl-angular' ></i>
+                            <i class='bx bxl-angular'></i>
                             <i class='bx bxl-css3'></i>
-                            <i class='bx bxs-data' ></i>
+                            <i class='bx bxs-data'></i>
                         </div>
                     </div>
                     <img src="images/movieflix.png" alt="MovieFlix">
-
                 </div>
-                <div class="cards-projetos">
+                
+                <div class="cards-projetos" data-title="Api Books" data-info="Um sistema back-end, para uma biblioteca física, onde o proprietário pode cadastrar livros no sistema. gerência alugueis dos livros, o sistema calcula uma multa caso o usário atrase a devolução do livro." data-image="images/cod.jpeg" data-date="14/04/2024" data-linkedin="https://www.linkedin.com/posts/luan-luciano-1603b4197_desenvolvimentodesoftware-springboot-swagger-activity-7184519534475694080-bgbk?utm_source=share&utm_medium=member_desktop" data-github="https://github.com/Luann2003/API-LIVROS"  >
                     <div class="overlay-projetos">
                         <p>Api Books</p>
                         <div class="tech">
                             <i class='bx bxl-spring-boot'></i>
-                            <i class='bx bxl-postgresql' ></i>
-                            <i class='bx bxl-docker' ></i>
-
+                            <i class='bx bxl-postgresql'></i>
+                            <i class='bx bxl-docker'></i>
                         </div>
                     </div>
-
-
                     <img src="images/cod.jpeg" alt="ApiBooks">
-
                 </div>
-                <div class="cards-projetos">
+                
+                <div class="cards-projetos" data-title="Dscommerce" data-info="O Sistema dscommerce é uma aplicação web que simplifica o processo de gerenciamento de pedidos e produtos para empresas. Com recursos avançados de autenticação, permite que os administradores controlem facilmente o acesso aos dados e ações críticas. Os clientes podem visualizar produtos e fazer pedidos de forma rápida e eficiente, enquanto os administradores têm controle total sobre o estoque, pedidos e categorias de produtos." data-image="images/dscommerce.jpeg" data-date="01/08/2023"  data-linkedin="https://www.linkedin.com/posts/luan-luciano-1603b4197_projeto-dscommerce-05-sobre-o-projeto-activity-7104222524418252800-HONs?utm_source=share&utm_medium=member_desktop" data-github="https://github.com/Luann2003/dscommerce-05"  >
                     <div class="overlay-projetos">
                         <p>Dscommerce</p>
                         <div class="tech">
                             <i class='bx bxl-spring-boot'></i>
-                            <i class='bx bxs-data' ></i>
-
+                            <i class='bx bxs-data'></i>
                         </div>
                     </div>
-
-                    <img src="images/dscommerce.jpeg" alt="Dscinnercece">
-
+                    <img src="images/dscommerce.jpeg" alt="Dscommerce">
                 </div>
+                
             </div>
         </section>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <div class="modalX">
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </div>
+                
+                <div class="modal-info">
+                    <div class="modal-image">
+                        <img id="modal-image" src="" alt="">
+                    </div>
+       
+                    <div class="modal-text">
+                        <h2 id="modal-title"></h2>
+                        <p id="modal-info"></p>
+                        <p id="modal-date"></p>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="button"> 
+                        <a href="" id="link-linkedin" target="_blank">Acessar projeto no LinkedIn</a>
+                    </button>
+                    <button type="button"> 
+                        <a href="" id="link-github" target="_blank">Acessar projeto no GitHub</a>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+
+
     </main>
 
     <footer>
         <div class="">
             <p>Desenvolvido por &copy; <strong> <span>Luan Luciano</span> 2024.</strong> Todos os direitos reservados.</p>
-
         </div>
-
-
     </footer>
 
     <script src="js/animation.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

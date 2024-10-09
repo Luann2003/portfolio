@@ -231,7 +231,6 @@ h2 {
 .download-btn:hover{
     background-color: #18F9EB;
     transition: 0.4s;
-
 }
 
 .skills{
@@ -253,11 +252,17 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 80px;
-
 }
+
+.bxl-java{
+    font-size: 95px;
+}
+
+
 .bxl-java, .bxl-spring-boot, .bxl-postgresql, .bxl-docker, .bxl-javascript, .bxl-typescript, .bxl-angular{
     color: #7a7a7a;
     transition: 0.6s;
+   
 }
 
 .bxl-java:hover, .bxl-spring-boot:hover, .bxl-postgresql:hover, .bxl-docker:hover, .bxl-javascript:hover, .bxl-typescript:hover, .bxl-angular:hover{
@@ -288,7 +293,7 @@ h2 {
 }
 
 .line-blue{
-    width: 160px;
+    width: 230px;
     height: 2px; 
     background-color: #18F9EB;
     margin-top: 8px;
