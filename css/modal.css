@@ -17,7 +17,7 @@
 .modal-content{
     display: flex;
     flex-direction: column;
-    width: 53vw;
+    width: 65vw;
     margin: 15vh auto;
     background-color:  #1C1C1C;
     box-shadow: 1px 1px 10px black;
@@ -75,7 +75,6 @@
 
 button{
     background-color: #dedede; 
-    color: black;
     padding: 10px 20px;
     text-align: center;
     font-size: 12px;
@@ -90,6 +89,7 @@ button{
 
 button a {
     color: black;
+    font-size: 13px;
 }
 
 button:hover{
@@ -99,10 +99,22 @@ button:hover{
     transform: scale(1.05);
 }
 
+.modal-text ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    margin-top: 10px;
+    font-size: 14px;
+    color: #dedede;
+}
 
+.modal-text ul li {
+    text-align: left;
+    color: #dedede;
+}
 
-
-
+.tag{
+    color: #dedede;
+}
 
 .modal-close{
     position: absolute;
